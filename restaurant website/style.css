@@ -1,0 +1,334 @@
+@import url(http://allfont.net/allfont.css?fonts=aleo-regular);
+html{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*, *:after, *:before{
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body{
+    font-family: Georgia;
+    margin: 0;
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.logo{
+    float: left;
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+    width: 100px;
+
+    text-indent: -10000px;
+}
+
+.main-menu{
+    float: right;
+}
+
+.main-menu ul{
+    list-style: none;
+    padding: 0;
+}
+
+.main-menu li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+.main-menu li:last-child{
+    margin-right: 0;
+}
+.main-menu a{
+    text-decoration: none;
+    font-family: 'Aleo Regular', arial;
+    color: #000;
+    font-size: 18px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.main-menu a:hover{
+    color: #888;
+}
+.main-menu h2{
+    text-indent: -10000px;
+    height: 0;
+    margin: 0;
+}
+.banner img{
+    width: 100%;
+}
+.food-menu .food-menubar{
+    background-image: url(img/menu-head.png);
+    background-repeat: no-repeat;
+    width: 156px;
+    height: 74px;
+    text-indent: -10000px;
+    margin: 0 auto;
+    position: relative;
+    top: -4px;
+}
+
+.food-menu ul{
+    padding: 0;
+    list-style: none;
+}
+.food-menu ul:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.food-menu li{
+    float: left;
+    width: 42%;
+    padding: 0;
+    margin: 20px 0 20px 8%;
+}
+
+.food-menu li:nth-child(odd){
+    margin: 20px 8% 20px 0;
+}
+
+.food-menu .dish{
+    float: left;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding-right: 15px; 
+
+}
+
+
+.food-menu .price{
+    float: right;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding-left: 15px; 
+}
+.food-menu .description{
+    clear: both;
+    display: block;
+    color: #999;
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 10px; 
+    border-top: 1px solid #ddd;
+    position: relative;
+    top: -8px;
+}
+.food-menu a{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    width: 124px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.food-menu a:hover{
+    color: #000;
+    border: 1px solid #000;
+}
+
+#featured{
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+#featured h2{
+    color: #555;
+}
+#featured .desh{
+    width: 200px;
+    height: 1px;
+    background: #ddd;
+    position: relative;
+    top: -32px;
+    left: 222px;
+}
+
+#featured ul{
+    margin-top: 30px;
+    padding: 0;
+}
+
+#featured li{
+    float: left;
+    width: 23%;
+    margin: 1%;
+    list-style-type: none; 
+}
+#featured li:last-child{
+    margin-right: 0;
+}
+#featured li:first-child{
+    margin-left: 0;
+}
+
+#featured li img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#featured li a{
+    color: #333;
+    text-decoration: none;
+    float: left;
+}
+
+#featured li span{
+    float: right;
+    color: #333;
+}
+
+#featured ul:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+footer{
+    background: #3B3B3B;
+    color: white;
+    padding: 30px 0;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    -webkit-transition: all 0.5;
+    -o-transition: all 0.5;
+    transition: all 0.5;
+    
+}
+footer a:hover{
+    color: #888;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+}
+footer li{
+    margin-bottom: 10px;
+}
+footer ul:last-child{
+    margin-right: 0;
+}
+footer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media screen and (max-width: 768px){
+    #featured li{
+        width: 46%;
+    }
+    .main-menu{
+        float: none;
+        clear:both;
+    }
+    .main-menu li{
+      text-align: center;
+      margin: 0;
+      width: 19%;
+   
+    }
+    .main-menu li:last-child{
+        margin-right: 0;
+    }
+    .main-menu li a{
+        font-size: 15px;
+    }
+    .logo{
+        float:none;
+        margin: 10px auto 0 auto;
+    }
+     footer ul{
+    
+    width: 46%;
+    }
+    footer li{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #featured li{
+        width: 92%;
+    }
+   footer ul{
+    
+    width: 96%;
+    }
+    footer li{
+        text-align: center;
+    }
+    .food-menu li{
+    float: none;
+    width: 96%;
+    margin: 10px 2% !important;
+}
+
+header .wrapper{
+    padding: 0;
+    width: 100%;
+}
+
+.nav-burger{
+    display: block;
+    background: url('img/test.png') no-repeat 98% center;
+    background-color: #000;
+    background-size: 25px 25px;
+    height: 40px;
+    width: 100%;
+}
+.main-menu h2{
+    margin-bottom: 10px;
+}
+.main-menu ul{
+    margin: 0;
+    overflow: hidden;
+    background: #505050;
+    height: 0;
+}
+.main-menu ul.open{
+    height: auto;
+}
+.main-menu li{
+    display: inherit;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+
+}
+.main-menu a{
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #404040;
+    display: block;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.main-menu li a:hover{
+    background:rgba(0,0,0,0.3);
+}
+}
