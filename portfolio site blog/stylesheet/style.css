@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('../fonts/raleway-regular.eot');
+    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular.woff') format('woff'),
+         url('../fonts/raleway-regular.ttf') format('truetype'),
+         url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'raleway-bold';
+    src: url('../fonts/raleway-bold.eot');
+    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold.woff') format('woff'),
+         url('../fonts/raleway-bold.ttf') format('truetype'),
+         url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'raleway-semibold';
+    src: url('../fonts/raleway-semibold.eot');
+    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-semibold.woff') format('woff'),
+         url('../fonts/raleway-semibold.ttf') format('truetype'),
+         url('../fonts/raleway-semibold.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    box-sizing: border-box;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+.header{
+    overflow: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    left: 0;    
+}
+
+.wrapper{
+    padding-left: 50px;
+}
+.header .blog-title{
+    margin-top: 100px;
+}
+
+.header .blog-title h2{
+    font-size: 24px;
+    font-family: "raleway-regular"; 
+}
+
+.header nav{
+    margin-top: 90px;
+}
+
+.header li{
+    margin-bottom: 20px;
+}
+.header li a{
+    font-family: "raleway-regular", arial;
+    text-decoration: none;
+    color: #45454A;
+    transition: color 0.5s;
+}
+.header li a:hover{
+    color:#D9D9D9;
+}
+
+.header .menu-footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.menu-footer{
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+}
+.menu-footer p{
+    font-family: "raleway-regular", arial;
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+
+.menu-footer ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu-footer li{
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0 15px 15px 0;
+}
+
+.menu-footer li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('../images/sm.png') no-repeat;
+    background-position: 0 0;
+    transition: background 0.3s;
+}
+
+.menu-footer li a.fb:hover{
+    background: url('../images/sm_hover.png') no-repeat;
+    background-position: 0px 0px;
+}
+
+.menu-footer li a.google{
+    background-position: -31px 0px;
+}
+.menu-footer li a.google:hover{
+    background: url('../images/sm_hover.png') no-repeat;
+    background-position: -31px 0px;
+}
+
+.menu-footer li a.twitter{
+    background-position: -93px 0px;
+}
+.menu-footer li a.twitter:hover{
+    background: url('../images/sm_hover.png') no-repeat;
+    background-position: -93px 0px;
+}
+.menu-footer li a.rss{
+    background-position: -155px 0px;
+}
+.menu-footer li a.rss:hover{
+    background: url('../images/sm_hover.png') no-repeat;
+    background-position: -155px 0px;
+}
+.content{
+    padding-left: 300px;
+}
+.content .item{
+    width: 33.33%;
+    float: left;
+}
+.item img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.5s;
+}
+
+.item{
+    position: relative;
+}
+.item .caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 0;
+    border-top: 2px solid #45454A;
+    border-bottom: 2px solid #45454A;
+    opacity: 0;    
+}
+.item h2{
+    text-align: center;
+    font-family: "raleway-regular", arial;
+}
+
+@media screen and (max-width:1260px){
+    .header{
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+    .header .blog-title{
+        margin: 0;
+        padding: 20px;
+        overflow: hidden;
+    }
+    .header h2{
+        float: left;
+        margin-top: 12px;
+    }
+    .header nav{
+        margin-top: 0;
+        height: 0;
+        transition: height .5s;
+    }
+    .header li a:hover{
+        background:#D9D9D9;
+    }
+    .header .togbutton{
+        display: block;
+        background: url('../images/men_icons.png') no-repeat;
+        width: 40px;
+        height: 40px;
+        float: right;
+    }
+    .header li{
+        margin: 0;
+    }
+    .header li a{
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid #ededed;
+    }
+    .wrapper{
+        padding: 0;
+    }
+    .header .menu-footer{
+        display: none;
+    }
+    .content{
+        padding: 0;
+    }
+
+}
+@media screen and (max-width:700px){
+    .content .item{
+        width: 50%;
+    }
+}
+@media screen and (max-width:350px){
+    .content .item{
+        width: 100%;
+    }
+}
